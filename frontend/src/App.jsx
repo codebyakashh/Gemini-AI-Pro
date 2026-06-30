@@ -127,7 +127,7 @@ function App() {
     }
   };
 
-  const currentSession = sessions.find((s) => s._id === currentSessionId);
+  const currentSession = sessions?.find(s => s.id === sessionId);
 
   return (
     <div className="flex h-screen w-screen overflow-hidden font-sans bg-slate-950 text-white">
