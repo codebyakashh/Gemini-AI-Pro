@@ -1,0 +1,244 @@
+/* =========================
+   GLOBAL THEME
+========================= */
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  background:
+    radial-gradient(circle at top left,
+      rgba(6, 182, 212, 0.12),
+      transparent 30%),
+    radial-gradient(circle at top right,
+      rgba(168, 85, 247, 0.12),
+      transparent 30%),
+    #0f172a;
+
+  overflow: hidden;
+}
+
+/* =========================
+   PREMIUM GLASS EFFECT
+========================= */
+
+.glass {
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* =========================
+   HOVER ANIMATIONS
+========================= */
+
+.hover-lift {
+  transition: all 0.25s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FADE IN ANIMATION
+========================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease-out;
+}
+
+/* =========================
+   MESSAGE ANIMATION
+========================= */
+
+@keyframes messagePop {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.message-pop {
+  animation: messagePop 0.25s ease;
+}
+
+/* =========================
+   PREMIUM INPUT FOCUS
+========================= */
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 1px rgba(34, 211, 238, 0.5),
+    0 0 20px rgba(34, 211, 238, 0.15);
+}
+
+/* =========================
+   CYAN GLOW
+========================= */
+
+.cyan-glow {
+  box-shadow:
+    0 0 20px rgba(34, 211, 238, 0.25),
+    0 0 40px rgba(34, 211, 238, 0.1);
+}
+
+/* =========================
+   SIDEBAR SCROLL
+========================= */
+
+.sidebar-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 999px;
+}
+
+/* =========================
+   CHAT WINDOW SCROLL
+========================= */
+
+.chat-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: rgba(34, 211, 238, 0.25);
+  border-radius: 999px;
+}
+/* APP FADE */
+
+@keyframes appFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: appFade .4s ease;
+}
+
+/* CHAT HOVER */
+
+.message-pop:hover {
+  transform: translateY(-2px);
+}
+
+/* PREMIUM GLASS */
+
+.glass {
+  background: rgba(15,23,42,.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* BUTTON HOVER */
+
+.btn-hover {
+  transition: all .25s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* CHAT BUBBLE */
+
+.chat-bubble {
+  transition: all .25s ease;
+}
+
+.chat-bubble:hover {
+  border-color: rgba(34,211,238,.3);
+}
+
+/* LOGO */
+
+.logo-hover {
+  transition: all .25s ease;
+}
+
+.logo-hover:hover {
+  transform: rotate(8deg);
+}
+.glass {
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.btn-hover {
+  transition: all .25s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-2px);
+}
+
+.logo-hover {
+  transition: all .25s ease;
+}
+
+.logo-hover:hover {
+  transform: rotate(8deg) scale(1.05);
+}
+/* =========================
+   COPY BUTTON
+========================= */
+
+.copy-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 8px;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px border;
+  border-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  color: #22d3ee;
+  background: rgba(34, 211, 238, 0.15);
+  border-color: rgba(34, 211, 238, 0.3);
+}
