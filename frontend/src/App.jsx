@@ -4,7 +4,7 @@ import axios from "axios";
 import Sidebar from "./components/Sidebar";
 import ChatWindow from "./components/ChatWindow";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 function App() {
   const [sessions, setSessions] = useState([]);
